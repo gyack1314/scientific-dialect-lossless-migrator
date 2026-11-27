@@ -23,11 +23,9 @@ class InventoryTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             path = root / 'source.lang'
-            path.write_bytes(b'let value = 1
-')
+            path.write_bytes(b'let value = 1\n')
             before = next(inventory(root))['sha256']
-            path.write_bytes(b'let value = 1
-')
+            path.write_bytes(b'let value = 1\r\n')
             self.assertNotEqual(before, next(inventory(root))['sha256'])
 
 
