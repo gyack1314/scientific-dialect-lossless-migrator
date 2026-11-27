@@ -1,0 +1,22 @@
+[
+  {
+    "id": "move-1",
+    "target": "current",
+    "files": [
+      "workspace/main.station",
+      "workspace/shared.station"
+    ],
+    "preview_sha256": {
+      "workspace/main.station": "pending",
+      "workspace/shared.station": "pending"
+    }
+  },
+  {
+    "id": "rename-1",
+    "target": "current",
+    "rename": {
+      "symbol": "shared.station::temp",
+      "to": "temperature"
+    }
+  }
+]

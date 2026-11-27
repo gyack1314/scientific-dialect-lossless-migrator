@@ -1,0 +1,5 @@
+dialect legacy
+include "shared.station" as common
+channel heat = common.temp \
+  + offset
+; disabled channel old = 3

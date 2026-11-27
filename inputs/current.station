@@ -1,0 +1,3 @@
+dialect current
+value station = "north"
+channel heat = ${base + offset} # current expression

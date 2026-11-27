@@ -1,0 +1,17 @@
+{
+  "legacy": {
+    "continuation": "\\",
+    "comment": ";",
+    "interpolation": false
+  },
+  "middle": {
+    "continuation": "+",
+    "comment": "\\",
+    "interpolation": false
+  },
+  "current": {
+    "continuation": "+",
+    "comment": "#",
+    "interpolation": true
+  }
+}
